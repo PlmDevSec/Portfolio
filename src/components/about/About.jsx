@@ -10,19 +10,23 @@ const About = () => {
                     <Card 
                         title="Mes projets"
                         description="..."
-                        imageUrl="..." />
+                        imageUrl="..."
+                        to="/projets" />
                     <Card 
                         title="Mon parcours"
                         description="..."
-                        imageUrl="..." />
+                        imageUrl="..."
+                        to="/parcours" />
                     <Card 
                         title="Mes formations"
                         description="..."
-                        imageUrl="..." />
+                        imageUrl="..."
+                        to="/formations" />
                     <Card 
                         title="Mes compétences"
                         description="..."
-                        imageUrl="..." />
+                        imageUrl="..."
+                        to="/competences" />
                 </div>
             </div>
             
