@@ -1,12 +1,21 @@
-.contact-form {
+.contact-container {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+    margin: 0 30px;
+}
+
+.contact-form,
+.contact-socials {
     background: rgba(8, 17, 29, 0.9);
     border: 1px solid rgba(56, 165, 255, 0.3);
     border-radius: 12px;
     padding: 30px;
     backdrop-filter: blur(12px);
     box-shadow: 0 0 25px rgba(22, 119, 200, 0.08);
-    width: 40%;
-    margin-left: 30px
+    flex: 1 1 0;
+    min-width: 0;
+    box-sizing: border-box;
 }
 
 .contact-section h2 {
@@ -110,4 +119,74 @@
 .contact-form textarea {
     min-height: 120px;
     resize: vertical;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px;
+    border: 1px solid rgba(56, 165, 255, 0.25);
+    border-radius: 8px;
+    background: rgba(8, 17, 29, 0.65);
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.social-links a:hover,
+.social-links a:focus-visible {
+    border-color: #38A5FF;
+    box-shadow: 0 0 12px rgba(56, 165, 255, 0.18);
+    transform: translateY(-2px);
+}
+
+.social-links a:focus-visible {
+    outline: 2px solid #38A5FF;
+    outline-offset: 3px;
+}
+
+.social-links svg {
+    width: 28px;
+    height: 28px;
+    color: #38A5FF;
+    flex-shrink: 0;
+}
+
+.social-links strong,
+.social-links small {
+    display: block;
+}
+
+.social-links strong {
+    color: #FFFFFF;
+    margin-bottom: 4px;
+}
+
+.social-links small {
+    color: #8FAFCB;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+@media (max-width: 700px) {
+    .contact-container {
+        flex-direction: column;
+        margin: 0 20px;
+    }
+
+    .contact-form,
+    .contact-socials {
+        flex: none;
+        width: 100%;
+        padding: 24px;
+    }
+
+    .contact-section h2 {
+        margin-left: 20px;
+    }
 }

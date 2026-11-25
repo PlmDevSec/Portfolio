@@ -1,4 +1,5 @@
 import './Contact.css';
+import { BriefcaseBusiness, CodeXml } from 'lucide-react';
 
 const Contact = () => {
     return (
@@ -6,7 +7,6 @@ const Contact = () => {
             <h2>Entrons en contact.</h2>
 
             <div className="contact-container">
-                
                 <div className="contact-form">
                     <div className="terminal-header">
                         <div className="terminal-dots">
@@ -34,7 +34,34 @@ const Contact = () => {
                 </div>
 
                 <div className="contact-socials">
-                    {/* Les cartes des réseaux sociaux viendront ici */}
+                    <div className="terminal-header">
+                        <div className="terminal-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <p>social.sh</p>
+                    </div>
+                    <div className="terminal-prompt">
+                        <span>user@portfolio:~$</span>
+                        <p>Retrouvez-moi en ligne.</p>
+                    </div>
+                    <div className="social-links">
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+                            <BriefcaseBusiness aria-hidden="true" />
+                            <span>
+                                <strong>LinkedIn</strong>
+                                <small>Réseau professionnel</small>
+                            </span>
+                        </a>
+                        <a href="https://github.com/" target="_blank" rel="noreferrer">
+                            <CodeXml aria-hidden="true" />
+                            <span>
+                                <strong>GitHub</strong>
+                                <small>Mes projets et mon code</small>
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

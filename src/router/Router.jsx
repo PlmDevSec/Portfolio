@@ -7,6 +7,9 @@ import Home from '../pages/home/Home.jsx'
 import About from '../pages/about/About.jsx'
 import Contact from '../pages/contact/Contact.jsx'
 import Projects from '../pages/projects/Projects.jsx'
+import Parcours from '../pages/parcours/Parcours.jsx'
+import Formations from '../pages/formations/Formations.jsx'
+import Veille from '../pages/veille/Veille.jsx'
 
 
 const Router = () => {
@@ -19,6 +22,9 @@ const Router = () => {
                         <Route path="/a-propos" element={<About />} />
                         <Route path="/contact" element={<Contact />} />
                         <Route path="/projets" element={<Projects />} />
+                        <Route path="/parcours" element={<Parcours />} />
+                        <Route path="/formations" element={<Formations />} />
+                        <Route path="/veille" element={<Veille />} />
                     </Route>
                 </Routes>
         </BrowserRouter>
